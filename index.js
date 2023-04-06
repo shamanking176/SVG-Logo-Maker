@@ -2,8 +2,7 @@ const inquirer = require('inquirer');
 const path = require('path');
 const {writeFile} = require('fs/promises');
 const { Circle, Triangle, Square } = require("./lib/shape")
-// const { Svg } = require('@svgdotjs/svg.js');
-// TODO: Create an array of questions for user input
+
 const questions = [{
     type: 'input',
     name: 'text',
@@ -50,5 +49,4 @@ const createLogo =(shape) =>{
 }
 
 askquestions();
-// var text = "<rect fill='blue' height='50' width='50'>"
-// var elem = svg(text);
+
